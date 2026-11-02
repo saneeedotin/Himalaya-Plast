@@ -1,0 +1,4 @@
+/config/config.php
+/config/dev-admin.txt
+config/demo-config.php
+config/vapid.php

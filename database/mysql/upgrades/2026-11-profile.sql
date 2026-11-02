@@ -1,0 +1,3 @@
+-- Upgrade for databases loaded before the "My profile" page (run once, as the account that loaded 01-09).
+-- Re-run 03_core_procedures.sql: it adds sp_profile_get and sp_profile_update. No table changes
+-- (users.phone already exists), and an EXECUTE-only account needs no new grant.

@@ -1,0 +1,3 @@
+code,name,category,uom,hsn_code,standard_cost,min_stock_level
+RM-PVC-K67,PVC resin K67,RAW_MATERIAL,Kg,3904,92.50,500
+FG-DRIP-16,Drip lateral 16 mm,FINISHED_GOODS,Meter,3917,,0

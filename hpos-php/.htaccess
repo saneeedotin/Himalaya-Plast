@@ -1,0 +1,8 @@
+# Only used when the host will not let you point the document root at public/.
+# Sends every request into public/ so app/, config/ and tools/ are never reachable.
+Options -Indexes
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteRule ^$ public/ [L]
+    RewriteRule (.*) public/$1 [L]
+</IfModule>

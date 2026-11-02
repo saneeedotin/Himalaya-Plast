@@ -1,0 +1,4 @@
+-- Upgrade for databases loaded before search-as-you-type (run once, as the account that loaded 01-09).
+-- Re-run 07_read_procedures.sql: sp_search now also matches customer/supplier email and phone and
+-- finds staff (users, only for people with the Users:read right), and sp_search_suggest is new.
+-- No table changes, and an EXECUTE-only account needs no new grant.

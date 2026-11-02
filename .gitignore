@@ -1,0 +1,16 @@
+# Editors and OS
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Local tooling
+.claude/
+.playwright-mcp/
+
+# Backups and logs
+*.sql.gz
+backups/
+*.log
+
+# Local config and secrets live in hpos-php/.gitignore (config.php, dev-admin.txt, vapid.php, demo-config.php)

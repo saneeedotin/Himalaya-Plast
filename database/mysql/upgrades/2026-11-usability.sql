@@ -1,0 +1,7 @@
+-- Upgrade for databases loaded before the usability pass (run once, as the account that loaded 01-09).
+-- Re-run 04_masters_orders_production.sql. It changes procedures only, no tables:
+--   * sp_production_log: scrap in kg no longer posts against the finished-good item (it took metres out of stock)
+--   * sp_material_verify_mixing: a lot can be scanned by batch number or by the bag barcode it was received under,
+--     and a failed check says which lot is wrong
+--   * sp_stock_adjust (new): opening stock, count corrections, damage and loss
+--   * sp_job_card_set_status: completing the last job card of a work order whose planned quantity is made now completes the work order
